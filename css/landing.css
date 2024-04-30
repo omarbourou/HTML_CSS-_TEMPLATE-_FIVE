@@ -1,0 +1,406 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* start header */
+
+.back{
+  background-image: url(../images/Path.png);
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.group{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.group .group1 a{
+  color: #505F98;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 15px;
+  transition: 0.6s;
+}
+
+.group h2{
+  margin: 0;
+  color: #37447E;
+}
+
+.group .group2{
+  background-color: #111B47;
+  color: white;
+  padding: 7px 60px;
+}
+
+
+/* end header */
+/* start body */
+.group-select {
+  display: flex;
+  padding-top: 50px;
+  margin-top: 50px;
+  gap: 60px;
+}
+
+.group-select .text h3 {
+  margin: 0;
+  margin-top: 45px;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  color: #111B47;
+}
+
+.group-select .text p {
+  font-size: 18px;
+  word-spacing: 4.5px;
+}
+
+.group-select .text .icon {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-select .text .icon a {
+  background-color: #111B47;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  border: 3px solid #111B47;
+}
+
+.group-select .text .icon a:nth-child(2) {
+  background-color: white ;
+  color:#111B47 ;
+}
+
+.group-select .image img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  transition: 0.6s;
+  animation: fly 2s linear  infinite;
+}
+
+@keyframes fly {
+  0%,100%{
+    transform: translateY(-30%);
+  }
+  50%{
+    transform: translateY(0%);
+  }
+}
+
+
+/* end body */
+/* start light */
+
+.light{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.light .group-selector{
+  display: flex;
+  gap: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.light .group-selector .image img{
+  width: 100%;
+  max-width: 100%;
+  animation: fly 3s linear  infinite;
+
+}
+
+.group-selector .text>h3{
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #091133;
+}
+
+.group-selector .text>p{
+  font-size: 18px;
+  word-spacing: 4.5px;
+  color: #6F7CB2;
+  font-size: 18px;
+}
+
+.group-selector .icon{
+  padding-top: 30px;
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.group-selector .icon h3{
+  margin: 0;
+  margin-top: 20px;
+  font-size: 26px;
+  color: #091133;
+}
+
+.group-selector .icon p{
+  margin: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #5D6970;
+}
+/* end light */
+/* start section */
+
+.group-select{
+  display: flex;
+  gap: 163px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+
+.group-select .text>h3{
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #091133;
+}
+
+.group-select .text>p{
+  font-size: 18px;
+  word-spacing: 4.5px;
+  color: #6F7CB2;
+  font-size: 18px;
+}
+
+.group-select .text a{
+  display: block;
+  width: fit-content;
+  background-color: #111B47;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  border: 3px solid #111B47;
+  margin-top: 30px;
+  transition: 0.6s;
+}
+
+
+/* end section */
+
+/* start last section */
+
+.last-section{
+  background-color: #F3F5FF;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.last-section h2{
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #091133;
+}
+
+.last-section p{
+  font-size: 18px;
+  word-spacing: 4.5px;
+  color: #6F7CB2;
+  font-size: 18px;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.last-section .title{
+  margin: 40px auto;
+}
+
+.last-section .title span:first-child{
+  display: block;
+  font-size: 60px;
+  color: #091133;
+}
+
+.last-section .title span:last-child{
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.last-section .simple{
+  padding-top: 40px;
+}
+
+.last-section .simple span{
+  display: block;
+  color: #5D6970;
+  margin-bottom: 7px;
+}
+
+.last-section .simple a{
+  display: block;
+  width: fit-content;
+  background-color: #111B47;
+  color: white;
+  text-decoration: none;
+  padding: 10px 50px;
+  border: 3px solid #111B47;
+  margin: 15px auto;
+  transition: 0.6s;
+}
+
+/* end last section */
+/* start footer */
+.footer{
+  padding-top: 50px;
+    background-color: #E7ECFF;
+}
+
+.footer .groupe{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #CDD1D4;
+}
+
+.footer .groupe>div{
+  color: #9BA6AC;
+}
+
+.footer .groupe h2{
+  margin: 0;
+  color: #37447E;
+}
+
+.footer .groupe .groupe2{
+  background-color: #111B47;
+  color: white;
+  padding: 7px 30px;
+}
+
+.footer .box{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.footer .box .part1 a{
+  color: #505F98;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 15px;
+  transition: 0.6s;
+  padding: 7px 20px;
+  background: linear-gradient(to right, #009688 50% , white 50%);
+  background-size: 200% 100%;
+  background-position:right bottom  ;
+}
+
+.box .part1:hover a{
+  background-position:left bottom  ;
+}
+
+.footer .box .part2{
+  display: flex;
+}
+
+.footer .box .part2 i:not(:last-child){
+  margin-right: 20px;
+}
+
+.footer .box .part2 i{
+  color: #9BA6AC;
+}
+
+.footer .box .part2 .facebook:hover{
+  color: blue;
+}
+.footer .box .part2 .linkedin:hover{
+  color: #0e80d0;
+}
+.footer .box .part2 .twitter:hover{
+  color: #2196F3;
+}
+.footer .box .part2 .youtube:hover{
+  color: red;
+}
+
+.footer .box .part2 .instagram:hover{
+  color: rebeccapurple;
+}
+
+
+
+/* end footer */
+
+@media (max-width:767px){
+  .group-select,.group-selector{
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .group .group2{
+    padding: 7px 30px;
+  }
+  .group-select .text .icon{
+    flex-direction: column;
+    align-items: center;
+  }
+  .group-selector .icon{
+    flex-direction: column;
+    text-align: center;
+  }
+  .group-selector .text{
+    text-align: center;
+  }
+  .footer .groupe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
